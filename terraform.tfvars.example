@@ -6,7 +6,6 @@ azure-location = "westus"
 
 tag_source_git = "terraform-azure-docker-host"
 tag_owner = "your-email"
-tag_source_host = "your-host"
 
 src_ip_ctrl = "your source ip"
 
