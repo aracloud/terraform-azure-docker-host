@@ -64,3 +64,9 @@ variable "src_img_ref_docker" {
     version   = string
   })
 }
+
+# source ip access control including subnet mask
+variable "src_ip_ctrl" {
+  description = "source ip access control"
+  type = string
+}

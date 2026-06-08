@@ -66,7 +66,7 @@ resource "azurerm_network_security_group" "azure_nsg" {
     protocol                   = "Tcp"
     source_port_range          = "*"
     destination_port_range     = 22
-    source_address_prefix      = "*"
+    source_address_prefix      = var.src_ip_ctrl
     destination_address_prefix = "*"
   }
 
@@ -78,7 +78,7 @@ resource "azurerm_network_security_group" "azure_nsg" {
     protocol                   = "Icmp"
     source_port_range          = "*"
     destination_port_range     = "*"
-    source_address_prefix      = "*"
+    source_address_prefix      = var.src_ip_ctrl
     destination_address_prefix = "*"
   }
 
