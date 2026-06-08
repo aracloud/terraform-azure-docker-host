@@ -55,6 +55,7 @@ Here are some key variables to configure:
   azure-location = "westus"
   tag_owner = "your-email"
   tag_source_host = "your-host"
+  src_ip_ctrl = "your_source_ip/32 or set * for ANY access"
   docker-pub-key = "your-machines-ssh-public-key"
   ```
 
