@@ -25,11 +25,6 @@ variable "tag_owner" {
   type = string
 }
 
-# tag: source host azure resource group
-variable "tag_source_host" {
-  type = string
-}
-
 # azure docker node instance type
 variable "docker-instance-type" {
   description = "instance type"
