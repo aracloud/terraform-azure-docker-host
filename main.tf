@@ -69,6 +69,17 @@ resource "azurerm_network_security_group" "azure_nsg" {
     source_address_prefix      = var.src_ip_ctrl
     destination_address_prefix = "*"
   }
+  security_rule {
+    name                       = "Allow-DOCKGE"
+    priority                   = 1100
+    direction                  = "Inbound"
+    access                     = "Allow"
+    protocol                   = "Tcp"
+    source_port_range          = "*"
+    destination_port_range     = 5001
+    source_address_prefix      = var.src_ip_ctrl
+    destination_address_prefix = "*"
+  }
 
   security_rule {
     name                       = "Allow-ICMP"
