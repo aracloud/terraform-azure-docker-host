@@ -15,9 +15,12 @@ Before using this Terraform project, ensure you have the following:
 
 ```
 project-directory/
+├── azure.tf
 ├── custom-data.tpl
+├── ext.tf
 ├── LICENSE
 ├── main.tf
+├── outputs.tf
 ├── providers.tf
 ├── README.md
 ├── terraform.tfvars.example
